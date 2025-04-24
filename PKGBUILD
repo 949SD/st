@@ -15,7 +15,14 @@ depends=(
     'libxft'
     'libxrender'
 )
-makedepends=()
+makedepends=(
+    'git'
+    'coreutils'
+    'pkgconf'
+    'gcc'
+    'sed'
+    'ncurses'
+)
 provides=('st')
 conflicts=()
 source=("$pkgname::git+$url")
